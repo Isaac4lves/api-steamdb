@@ -2,6 +2,8 @@ function formatarJogo(jogo) {
     return `
     id: ${jogo.steam_appid}
     gratuito: ${jogo.is_free}
+    ${jogo.metacritic ? `metacritic: ${jogo.metacritic.score}` : 'metacritic: null'}
+    suporte a controle: ${jogo.controller_support}
 
     titulo: ${jogo.name}
     desenvolvedor: ${jogo.developers[0]}
